@@ -2,5 +2,5 @@
 def print_list_integer(my_list=[]):
     template = "{:d}"
     for n in my_list:
-        num = template.(n)
+        num = template.format(n)
         print(num)
