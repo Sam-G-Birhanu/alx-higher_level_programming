@@ -9,4 +9,3 @@ if __name__ == "__main__":
         print("{:d} argument{}:".format(n - 1, "s" if n > 2 else ""))
         for idx, arg in enumerate(argv[1:], start=1):
             print("{:d}: {:}".format(idx, arg))
-
