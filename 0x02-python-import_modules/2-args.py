@@ -10,4 +10,4 @@ if __name__ == "__main__":
         total = num_args - 1
         print("{:d} arguments: ".format(total))
         for idx in range(1, num_args):
-            print("{:d} : {:} ".format(idx, argv[idx]))
+            print("{:d}: {:} ".format(idx, argv[idx]))
