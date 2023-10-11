@@ -2,12 +2,11 @@
 if __name__ == "__main__":
     from sys import argv
     num_args = len(argv)
-    total = 0
-    if len(argv) == 1:
-        total = 0
-        print("{:d} arguments. ".format(total))
+
+    if num_args == 1:
+        print("0 arguments.")
     else:
-        total = num_args - 1
-        print("{:d} arguments: ".format(total))
-        for idx in range(1, num_args):
-            print("{:d}: {:} ".format(idx, argv[idx]))
+        print("{:d} argument{}:".format(num_args - 1, "s" if num_args > 2 else ""))
+        for idx, arg in enumerate(argv[1:], start=1):
+            print("{:d}: {:}".format(idx, arg))
+
