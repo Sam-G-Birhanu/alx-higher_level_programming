@@ -1,2 +1,3 @@
 #!/bin/bash
+PYCODE=$($PYCODE)
 python3 -c "$PYCODE"
