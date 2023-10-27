@@ -1,7 +1,6 @@
 def add_integer(a, b=98):
     if a:
-        if (type(a) == int or type(a) == float) and (type(b) == int or type(b) == float):
-            if type(a) == float:
+        if isinstance(a, (int, float)) or isinstance(b, (int, float)):
                 a = int(a)
             if type(b) == float:
                 b = int(b)
