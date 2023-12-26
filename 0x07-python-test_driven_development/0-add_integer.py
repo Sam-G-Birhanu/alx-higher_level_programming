@@ -13,7 +13,7 @@ def add_integer(a, b=98):
         The return value. a + b
     """
     if a:
-        if isinstance(a, (int, float)) or isinstance(b, (int, float)):
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
             if type(a) == float:
                 a = int(a)
             if type(b) == float:
