@@ -22,10 +22,6 @@ def add_integer(a, b=98):
         else:
             try:
                 if (type(a) != int and type(a) != float):
-                    print("a", end=" ")
-                    raise Exception
+                    raise TypeError("a must be an integer")
                 if (type(b) != int and type(b) != float):
-                    print("b", end=" ")
-                    raise Exception
-            except Exception:
-                print("must be an integer")
+                    raise TypeError("b must be an integer")
