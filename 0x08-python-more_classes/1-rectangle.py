@@ -2,7 +2,9 @@
 """ this module contains a class named Rectangle """
 class Rectangle:
     """ this class defines a rectangle """
-    def __init__(self,width = 0,height = 0):
+
+
+    def __init__(self, width = 0, height = 0):
         self._width = width
         self._height = height
 
@@ -11,7 +13,7 @@ class Rectangle:
         return self._width
 
     @width.setter
-    def width(self,value):
+    def width(self, value):
         self._width = value
 
     @property
@@ -19,5 +21,5 @@ class Rectangle:
         return self._height
 
     @height.setter
-    def height(self , value):
+    def height(self, value):
         self._height = value
