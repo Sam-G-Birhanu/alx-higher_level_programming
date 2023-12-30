@@ -50,6 +50,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         p = []
+        self.print_symbol = str(self.print_symbol)
         for i in range(self.height):
             tp = []
             for j in range(self.width):
