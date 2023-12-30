@@ -58,7 +58,7 @@ class Rectangle:
                 tp.append(self.print_symbol)
             p.append("".join(tp))
         return "\n".join(p)
-    
+
     def __repr__(self):
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
