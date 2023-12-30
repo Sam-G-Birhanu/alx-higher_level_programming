@@ -42,8 +42,10 @@ class Rectangle:
             return 0
         self.Perimeter = (2 * self.__width) + (2 * self.__height)
         return self.Perimeter
+
     def __str__(self):
-        
+        if value self.width == 0 or self.height == 0:
+            return ""
         p = []
         for i in range(self.height):
             tp = []
