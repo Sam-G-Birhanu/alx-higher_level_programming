@@ -5,6 +5,7 @@
 class Rectangle:
     """ this class defines a rectangle """
     number_of_instances = 0
+    
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -54,7 +55,7 @@ class Rectangle:
                 tp.append("#")
             p.append("".join(tp))
         return "\n".join(p)
-    
+
     def __repr__(self):
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
