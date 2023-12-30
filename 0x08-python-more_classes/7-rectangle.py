@@ -53,7 +53,7 @@ class Rectangle:
         for i in range(self.height):
             tp = []
             for j in range(self.width):
-                tp.append(Rectangle.print_symbol)
+                tp.append(self.print_symbol)
             p.append("".join(tp))
         return "\n".join(p)
     
