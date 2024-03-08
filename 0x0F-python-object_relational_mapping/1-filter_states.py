@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Lists all states that start with N from  hbtn_0e_0_usa.
-Usage: ./0-select_states.py <mysql username> <mysql password> <database name>
+Usage: 1-filter_states.py <mysql username> <mysql password> <database name>
 """
 import sys
 import MySQLdb
