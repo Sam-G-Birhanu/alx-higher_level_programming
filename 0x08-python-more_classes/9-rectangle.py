@@ -4,9 +4,10 @@
 
 class Rectangle:
     """ this class defines a rectangle """
-    
+
     number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -57,14 +58,14 @@ class Rectangle:
                 tp.append(self.print_symbol)
             p.append("".join(tp))
         return "\n".join(p)
-    
+
     def __repr__(self):
         return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         if not isinstance(rect_1, Rectangle):
@@ -77,7 +78,7 @@ class Rectangle:
         else:
             return rect_2
 
-    @classmethod        
+    @classmethod
     def square(cls, size=0):
         new_obj = Rectangle(size, size)
         return new_obj
